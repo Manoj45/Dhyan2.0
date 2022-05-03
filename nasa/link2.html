@@ -1,0 +1,80 @@
+
+<html>
+
+    <header>
+     <title>NASA</title>
+    </header>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <body>
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h2>&#8226 Project Artemis</h2>
+        <img src="NASA.png">
+        <p class="col-md-8 fs-4">With the Artemis program, NASA will land the first woman and next man on the Moon by 2024, using innovative technologies to explore more of the lunar surface than ever before.</p>
+        <button class="btn btn-primary btn-lg" type="button" onclick="togglePopup()">View More </button>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>&#8226 Juno-Mission at Jupiter</h2>
+          <p>Juno's principal goal is to understand the origin and evolution of Jupiter. Underneath its dense cloud cover, Jupiter safeguards secrets to the fundamental processes.</p>
+          <button class="btn btn-outline-light" type="button" onclick="myfunc()">View More</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Skylab (1965–1979)</h2>
+          <p>Skylab was the United States' first and only independently built space station.Conceived in 1965 as a workshop to be constructed in space from a spent Saturn IB upper stage, the 169,950 lb</p>
+          <button class="btn btn-outline-secondary" type="button" onclick="myfunction()">View More</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <p align="center">
+    <a href="https://www.nasa.gov/">To visit Space X official website click here</a>
+      </p>
+  </div>
+
+  
+</body>
+<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">×</div>
+    <h2>&#8226 Project Artemis</h2>
+    <p>With the Artemis program, NASA will land the first woman and next man on the Moon by 2024, using innovative technologies to explore more of the lunar surface than ever before. We will collaborate with our commercial and international partners and establish sustainable exploration by the end of the decade. Then, we will use what we learn on and around the Moon to take the next giant leap – sending astronauts to Mars.</p>
+  </div>
+  </div>
+<div class="popup" id="popup-2">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="myfunc()">×</div>
+    <h2>&#8226 Juno-Mission at Jupiter</h2>
+    <p>Juno's principal goal is to understand the origin and evolution of Jupiter. Underneath its dense cloud cover, Jupiter safeguards secrets to the fundamental processes and conditions that governed our solar system during its formation. As our primary example of a giant planet, Jupiter can also provide critical knowledge for understanding the planetary systems being discovered around other stars.With its suite of science instruments, Juno will investigate the existence of a solid planetary core, map Jupiter's intense magnetic field, measure the amount of water and ammonia in the deep atmosphere, and observe the planet's auroras.Juno will let us take a giant step forward in our understanding of how giant planets form and the role these titans played in putting together the rest of the solar system.</p>
+  </div>
+</div>
+<div class="popup" id="popup-3">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="myfunction()">×</div>
+    <h2>Skylab (1965–1979)</h2>
+    <p>Skylab was the United States' first and only independently built space station.Conceived in 1965 as a workshop to be constructed in space from a spent Saturn IB upper stage, the 169,950 lb (77,088 kg) station was constructed on Earth and launched on May 14, 1973, atop the first two stages of a Saturn V, into a 235-nautical-mile (435 km) orbit inclined at 50° to the equator. Damaged during launch by the loss of its thermal protection and one electricity-generating solar panel, it was repaired to functionality by its first crew. It was occupied for a total of 171 days by 3 successive crews in 1973 and 1974. It included a laboratory for studying the effects of microgravity, and a solar observatory. NASA planned to have a Space Shuttle dock with it, and elevate Skylab to a higher safe altitude, but the Shuttle was not ready for flight before Skylab's re-entry on July 11, 1979</p>
+  </div>
+</div>
+
+<script>
+  function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+  }
+  function myfunc(){
+    document.getElementById("popup-2").classList.toggle("active");
+  }
+  function myfunction(){
+    document.getElementById("popup-3").classList.toggle("active");
+  }
+</script>
+</html>

@@ -1,0 +1,80 @@
+
+<html>
+
+    <header>
+     <title>Space X</title>
+    </header>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <body>
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h2>8226Anasis II</h2>
+        <img src="wee.jpg">
+        <p class="col-md-8 fs-4">On Monday, July 20 at 5:00 p.m., SpaceX’s Falcon 9 launched the ANASIS-II mission from Space Launch Complex 40 (SLC-40) at Cape Canaveral Air Force Station in Florida.</p>
+        <button class="btn btn-primary btn-lg" type="button" onclick="togglePopup()">View More </button>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>8226 Reusable launch system</h2>
+          <p>SpaceX's reusable launcher program was publicly announced in 2011 and the design phase was completed in February 2012. The system returns the first stage of a Falcon 9 rocket</p>
+          <button class="btn btn-outline-light" type="button" onclick="myfunc()">View More</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Dragon spacecraft</h2>
+          <p>SpaceX has developed the Dragon spacecraft to transport cargo and crew to the International Space Station. The first version of Dragon, used only for cargo, was first launched in 2010.</p>
+          <button class="btn btn-outline-secondary" type="button" onclick="myfunction()">View More</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <p align="center">
+    <a href="https://www.spacex.com/">To visit Space X official website click here</a>
+      </p>
+  </div>
+
+  
+</body>
+<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">×</div>
+    <h2>8226Anasis II</h2>
+    <p>On Monday, July 20 at 5:00 p.m., SpaceX’s Falcon 9 launched the ANASIS-II mission from Space Launch Complex 40 (SLC-40) at Cape Canaveral Air Force Station in Florida. Falcon 9’s first stage previously launched Crew Dragon to the International Space Station with NASA astronauts Bob Behnken and Doug Hurley on board.</p>
+  </div>
+  </div>
+<div class="popup" id="popup-2">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="myfunc()">×</div>
+    <h2>8226 Reusable launch system</h2>
+    <p>SpaceX's reusable launcher program was publicly announced in 2011 and the design phase was completed in February 2012. The system returns the first stage of a Falcon 9 rocket to a predetermined landing site using only its own propulsion systems.SpaceX's active test program began in late 2012 with testing low-altitude, low-speed aspects of the landing technology. The prototypes of Falcon 9 performed vertical takeoffs and landings.High-velocity, high-altitude aspects of the booster atmospheric return technology began testing in late 2013 and have continued through 2018, with a 98% success rate to date. As a result of Elon Musk's goal of crafting more cost-effective launch vehicles, SpaceX conceived a method to reuse the first stage of their primary rocket, the Falcon 9,[152] by attempting propulsive vertical landings on solid surfaces. Once the company determined that soft landings were feasible by touching down over the Atlantic and Pacific Ocean, they began landing attempts on a solid platform. SpaceX leased and modified several barges to sit out at sea as a target for the returning first stage, converting them to autonomous spaceport drone ships (ASDS).</p>
+  </div>
+</div>
+<div class="popup" id="popup-3">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="myfunction()">×</div>
+    <h2>Dragon spacecraft</h2>
+    <p>SpaceX has developed the Dragon spacecraft to transport cargo and crew to the International Space Station. The first version of Dragon, used only for cargo, was first launched in 2010.[34] The currently operational second generation Dragon spacecraft, known as Dragon 2, conducted its first flight, without crew, to the ISS in early 2019, followed by a crewed flight of Dragon 2 in 2020.The cargo variant of Dragon 2 flew for the first time in December 2020, for a resupply to the Space Station as part of the CRS contract with NASA.</p>
+  </div>
+</div>
+
+<script>
+  function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+  }
+  function myfunc(){
+    document.getElementById("popup-2").classList.toggle("active");
+  }
+  function myfunction(){
+    document.getElementById("popup-3").classList.toggle("active");
+  }
+</script>
+</html>
